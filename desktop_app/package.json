@@ -1,0 +1,21 @@
+{
+  "name": "led-light-controller",
+  "version": "0.1.0",
+  "main": "public/electron.js",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "concurrently": "^8.2.0",
+    "wait-on": "^7.0.1"
+  },
+  "scripts": {
+    "start": "concurrently \"npm:react-start\" \"npm:electron-start\"",
+    "react-start": "react-scripts start",
+    "electron-start": "wait-on tcp:3000 && electron .",
+    "build": "react-scripts build && electron-builder"
+  }
+}

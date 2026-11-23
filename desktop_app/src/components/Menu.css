@@ -1,0 +1,154 @@
+/* Minimalistic, modern menu styling */
+.menu {
+  max-width: 440px;
+  margin: 40px auto;
+  padding: 32px 28px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.09);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-menu .greeting {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+.home-menu .instruction {
+  font-size: 1.1rem;
+  margin-bottom: 28px;
+}
+.primary-btn {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  margin: 18px 0 0 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.primary-btn:hover {
+  background: #217dbb;
+}
+.footer {
+  margin-top: 48px;
+  color: #aaa;
+  font-size: 0.95rem;
+}
+.config-menu .title {
+  font-size: 1.5rem;
+  margin-bottom: 18px;
+}
+.device-types button {
+  margin: 0 8px 12px 0;
+  padding: 10px 18px;
+  border-radius: 7px;
+  border: 1px solid #eee;
+  background: #f7f7f7;
+  cursor: pointer;
+}
+.device-types .selected {
+  background: #3498db;
+  color: #fff;
+  border: 1px solid #3498db;
+}
+.device-options, .esp-status {
+  margin: 16px 0;
+}
+.control-menu .header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+}
+.lamp-graphic {
+  width: 70px;
+  height: 100px;
+  margin: 0 auto 18px auto;
+  background: #f9f9f9;
+  border-radius: 40px 40px 30px 30px/60px 60px 40px 40px;
+  position: relative;
+}
+.lamp-cord {
+  width: 4px;
+  height: 40px;
+  background: #bbb;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+.lamp-cord.on {
+  background: #f9d923;
+  box-shadow: 0 4px 16px 2px #f9d92344;
+}
+.brightness-control {
+  margin: 18px 0 12px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.brightness-control input[type='range'] {
+  width: 180px;
+  margin: 8px 0;
+}
+.presets {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+}
+.preset-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin: 0 7px;
+  border: 2px solid #eee;
+  display: inline-block;
+}
+.preset-add {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #eee;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 7px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.modes button {
+  margin: 0 7px;
+  padding: 7px 16px;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  background: #fafafa;
+  cursor: pointer;
+}
+.music-sync button {
+  margin-top: 12px;
+  background: #f1c40f;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 22px;
+  font-size: 1.05rem;
+  cursor: pointer;
+}
+.secondary-btn {
+  margin-top: 32px;
+  background: #eee;
+  color: #333;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 26px;
+  font-size: 1.05rem;
+  cursor: pointer;
+}
+.secondary-btn:hover {
+  background: #ddd;
+}
